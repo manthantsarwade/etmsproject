@@ -1,3 +1,3 @@
 export const config = {
-    serverUrl :"http://localhost:8080",
-}
+    serverUrl: "http://13.201.166.205:8080", // Your backend EC2 instance
+};
