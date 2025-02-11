@@ -1,3 +1,3 @@
 export const config = {
-    serverUrl: "http://13.201.166.205:8080", // Your backend EC2 instance
+    serverUrl: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080',
 };

@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { createUrl } from '../utils';
+// import { createUrl } from '../utils';
 
 export async function regiter(firstName, lastName, email, password, role, dob, department) {
   try {
-    const url = createUrl('auth/signup');
+    const url = createUrl('http://backend:8080/auth/signup');
     const body  ={
       firstName,
       lastName,
@@ -24,7 +24,7 @@ export async function regiter(firstName, lastName, email, password, role, dob, d
 
 export async function Login(email,password){
     try{
-        const url = createUrl('auth/login');
+        const url = createUrl('http://backend:8080/auth/login');
         const body = {
             email,password
 
